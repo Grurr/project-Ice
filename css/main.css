@@ -1,14 +1,34 @@
 .footer {
   font-family: DM Sans;
-  max-width: 320px;
   background-color: rgb(255, 245, 246);
   margin: 0 auto;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 320px;
+  height: 100%;
 }
 .footer__text-upercasse {
   margin-left: 22px;
   margin-right: 66px;
   text-transform: uppercase;
+  position: relative;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__text-one {
   font-family: Titan One;
@@ -18,6 +38,7 @@
   line-height: 34px;
   letter-spacing: 4%;
   margin-top: 165px;
+  position: relative;
 }
 .footer__text-two {
   font-family: Titan One;
@@ -32,12 +53,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  right: 20px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  right: 2px;
+  margin-left: 97px;
   margin-top: 43px;
-  gap: 30px;
+  gap: 25px;
   list-style-type: none;
 }
 .footer__icon {
@@ -80,23 +99,27 @@
 }
 .footer__signature {
   text-align: center;
+  border-top: solid 1px rgb(225, 225, 225);
+  width: 100%;
 }
 .footer__signature p {
+  width: 350px;
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  border-top: solid 1px rgb(225, 225, 225);
   color: rgb(144, 126, 130);
   padding: 9px 91px 9px 82px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    max-width: 772px;
+    min-width: 772px;
   }
   .footer__text-upercasse {
-    margin-left: 22px;
-    margin-right: 66px;
+    margin-left: 0px;
+    margin-right: 340px;
     text-transform: uppercase;
     width: 350px;
   }
@@ -117,16 +140,19 @@
     line-height: 55px;
   }
   .footer__icons {
-    right: 36px;
+    right: 96px;
     margin-top: -252px;
     gap: 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .footer__contact {
     font-weight: bold;
     font-size: 14px;
     line-height: 26.04px;
     text-align: right;
-    margin-right: 39px;
+    margin-right: 71px;
     margin-top: 65px;
     padding-bottom: 120px;
   }
@@ -149,13 +175,14 @@
     padding: 9px 91px 9px 82px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
   .footer {
     max-width: 1280px;
   }
   .footer__text-upercasse {
-    margin-left: 114px;
     width: 450px;
+    position: relative;
+    right: 110px;
   }
   .footer__text-one {
     font-family: Titan One;
@@ -172,15 +199,15 @@
     margin-top: 15px;
   }
   .footer__icons {
-    right: 36px;
-    margin-right: 85px;
+    left: 30px;
+    margin-right: 0;
     margin-top: -152px;
     gap: 30px;
   }
   .footer__contact {
     font-size: 16px;
     line-height: 29.76px;
-    margin-right: 85px;
+    margin-right: 10px;
     margin-top: 37px;
     padding-bottom: 12px;
   }
